@@ -1,19 +1,13 @@
 import { BrowserWindow } from 'electron';
 import { join } from 'path';
 import { URL } from 'url';
-const {BrowserWindow} = require("electron-acrylic-window");
+const { setVibrancy } = require('electron-acrylic-window')
 
 async function createWindow() {
   const browserWindow = new BrowserWindow({
     show: false, //Use 'ready-to-show' event to show window
-    vibrancy: {
-      theme: 'appearance-based',
-      effect: 'acrylic',
-      transparent: true,
-      useCustomWindowRefreshMethod: true,
-      disableOnBlur: false,
-   },
-  //  frame: false,
+    //  frame: false,
+    vibrancy: 'dark',
     visualEffectState: 'active',
     webPreferences: {
       nativeWindowOpen: true,
@@ -21,6 +15,7 @@ async function createWindow() {
       preload: join(__dirname, '../../preload/dist/index.cjs'),
     },
   });
+  setVibrancy(browserWindow, "dark")
 
   /**
    * If you install `show: true` then it can cause issues when trying to close the window.
@@ -35,7 +30,8 @@ async function createWindow() {
       /**
        * Opens DevTools when needed
        */
-      // browserWindow?.webContents.openDevTools();
+
+      //browserWindow?.webContents.openDevTools();
     }
   });
 

@@ -1,4 +1,38 @@
-.preview {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+.preview.markdown-body {
     flex: 0 0 50%;
     padding: 12px;
+    box-sizing: border-box;
+    overflow: auto;
+    font-family: 'Noto Sans', sans-serif;
+    color: #a5a9b1;
+    background-color: transparent !important;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    
+}
+.preview.markdown-body pre {
+    background-color: rgba(0, 0, 0, 0.158);
+    color: white;
+    border: solid 1px rgba(128, 128, 128, 0.336);
+    
+}
+
+.preview.markdown-body pre code {
+    font-family: "Fira Code", monospace;
+    width: 50vw;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+h1, h3, h5 {
+    color: #ffccff;
+}
+
+h2, h4 {
+    color: #cce0ff;
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
 html, body {
     background-color: transparent;
     scrollbar-width: none;
@@ -6,13 +8,14 @@ html, body {
 
 body {
     margin: 0;
-    font-family: -apple-system, Blin Sans', 'HelveticakMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     background-color: transparent;
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-family: 'Fira Code', monospace;
+    word-wrap: normal;
+    overflow-x: hidden;
 }
 
 #root {

@@ -2,7 +2,14 @@
     background-color: transparent;
     display: flex;
     flex-direction: row;
+    height: 100%;
 }
 button {
     font-size: calc(10px + 2vim);
+}
+
+/* Hidden scrollbar for more app-like style */
+::-webkit-scrollbar {
+    width: 0;  
+    background: transparent; 
 }

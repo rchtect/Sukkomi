@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from 'react'
+import './editor.css'
 import { EditorState } from '@codemirror/state'
 import { EditorView, keymap, highlightActiveLine } from '@codemirror/view'
 import { defaultKeymap } from '@codemirror/commands'
@@ -14,28 +15,32 @@ import { oneDarkTheme } from '@codemirror/theme-one-dark'
 
 export const sukkomiTheme = EditorView.theme({
     '&': {
-        backgroundColor: '#0000001A',
+        backgroundColor: '#00000033',
         height: '100%',
         padding: "2px",
         "padding-right": "8px",
-        "font-size": "14px",
+        "font-size": "16px",
         color: "white",
-        "border-radius": "6px"
+        "font-family": "Fira Code",
+        "border": "solid " + "2px " + " rgba(128, 128, 128, 0.1)",
     },
     ".cm-gutters": {
         backgroundColor: "#ffccff",
         color: "#000",
         "border-radius": "3px",
+        "font-family": "Fira Code"
         
       },
     ".cm-line": {
         background: "transparent",
-        border: "none"
+        border: "none",
+        "font-family": "Fira Code"
     },
       ".cm-content": {
-        caretColor: "#000",
+        caretColor: "#FFF",
         backgroundColor: "transparent",
-        outline: "none"
+        outline: "none",
+        overflow: "hidden"
       },
       "&.cm-focused .cm-selectionBackground, ::selection": {
         backgroundColor: "#ffccff30",
@@ -43,39 +48,44 @@ export const sukkomiTheme = EditorView.theme({
       }, 
       "&.cm-editor.cm-focused": {
           outline: "none"
-      }
+      },
 })
 
 const syntaxHightlighting = HighlightStyle.define([
     {
         tag: tags.heading1,
-        fontSize: '1.802rem',
+        fontSize: '20px',
         fontWeight: 'bold',
         color: '#ffccff',
+        "font-family": "Fira Code"
     },
    {
        tag: tags.heading2,
-       fontSize: '1.602rem',
+       fontSize: '18px',
        fontWeight: 'bold',
        color: '#cce0ff',
+       "font-family": "Fira Code"
    },    
    {
     tag: tags.heading3,
-    fontSize: '1.424rem',
+    fontSize: '16px',
     fontWeight: 'bold',
     color: '#ffccff',
+    "font-family": "Fira Code"
     },
     {
         tag: tags.heading4,
-        fontSize: '1.266rem',
+        fontSize: '14px',
         fontWeight: 'bold',
         color: '#cce0ff',
+        "font-family": "Fira Code"
     },
     {
         tag: tags.heading5,
-        fontSize: '1.125rem',
+        fontSize: '14px',
         fontWeight: 'bold',
         color: '#ffccff',
+        "font-family": "Fira Code"
     }
 
 ])
