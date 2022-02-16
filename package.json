@@ -52,12 +52,22 @@
     "@codemirror/highlight": "^0.19.7",
     "@codemirror/history": "^0.19.2",
     "@codemirror/lang-javascript": "^0.19.7",
+    "@codemirror/lang-markdown": "^0.19.6",
     "@codemirror/language": "^0.19.7",
+    "@codemirror/language-data": "^0.19.2",
     "@codemirror/matchbrackets": "^0.19.4",
     "@codemirror/state": "^0.19.8",
+    "@codemirror/theme-one-dark": "^0.19.1",
+    "assert": "^2.0.0",
     "electron-acrylic-window": "^0.5.11",
     "electron-updater": "4.6.5",
+    "github-markdown-css": "^5.1.0",
+    "process": "^0.11.10",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "remark-gfm": "^3.0.1",
+    "remark-parse": "^10.0.1",
+    "remark-react": "^9.0.1",
+    "unified": "^10.1.1"
   }
 }

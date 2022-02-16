@@ -32,7 +32,7 @@ const config = {
     assetsDir: ".",
     rollupOptions: {
       input: join(PACKAGE_ROOT, "index.html"),
-      external: [...builtinModules.flatMap(p => [p, `node:${p}`])]
+      external: [...builtinModules.filter(m => m !== 'process' && m !== 'assert')]
     },
     emptyOutDir: true,
     brotliSize: false

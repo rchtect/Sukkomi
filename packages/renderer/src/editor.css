@@ -1,0 +1,6 @@
+.editor-wrapper {
+    height: 100%;
+    text-align: left;
+    font-size: 14px;
+    flex: 0 0 50%;
+}

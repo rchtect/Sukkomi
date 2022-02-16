@@ -12,8 +12,8 @@ async function createWindow() {
       transparent: true,
       useCustomWindowRefreshMethod: true,
       disableOnBlur: false,
-      frame: false,
    },
+  //  frame: false,
     visualEffectState: 'active',
     webPreferences: {
       nativeWindowOpen: true,
