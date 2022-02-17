@@ -1,4 +1,4 @@
-![Thumbnail](https://i.imgur.com/qMkDvbE.png)
+![Thumbnail](https://i.imgur.com/wvu75vO.png)
 # Sukkomi🌸
 An electron-based md editor based on Vite, Electron, React, Remark and CodeMirror.
 ## How to watch/deploy
