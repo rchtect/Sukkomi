@@ -8,6 +8,7 @@ async function createWindow() {
     show: false, //Use 'ready-to-show' event to show window
     //  frame: false,
     vibrancy: 'dark',
+    title: "",
     visualEffectState: 'active',
     webPreferences: {
       nativeWindowOpen: true,

@@ -7,6 +7,7 @@
   },
   "main": "packages/main/dist/index.cjs",
   "scripts": {
+    "postinstall": "electron-builder install-app-deps",
     "build": "npm run build:main && npm run build:preload && npm run build:renderer",
     "build:main": "cd ./packages/main && vite build",
     "build:preload": "cd ./packages/preload && vite build",
@@ -59,6 +60,7 @@
     "@codemirror/matchbrackets": "^0.19.4",
     "@codemirror/state": "^0.19.8",
     "@codemirror/theme-one-dark": "^0.19.1",
+    "@seorii/win32-displayconfig": "^0.1.1",
     "assert": "^2.0.0",
     "electron-acrylic-window": "^0.5.11",
     "electron-updater": "4.6.5",
