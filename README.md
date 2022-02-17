@@ -1,6 +1,9 @@
 ![Thumbnail](https://i.imgur.com/HmXx4sU.png)
 # Sukkomi🌸
 An electron-based md editor based on Vite, Electron, React, Remark and CodeMirror.
+## How to set up (first time)
+cd to extracted folder
+run `npm i`
 ## How to watch/deploy
 `npm run watch` (Uses Vite)
 ## How to build
