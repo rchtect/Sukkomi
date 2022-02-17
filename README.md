@@ -1,4 +1,4 @@
-![Thumbnail](https://i.imgur.com/wvu75vO.png)
+![Thumbnail](https://i.imgur.com/HmXx4sU.png)
 # Sukkomi🌸
 An electron-based md editor based on Vite, Electron, React, Remark and CodeMirror.
 ## How to watch/deploy
@@ -11,6 +11,6 @@ An electron-based md editor based on Vite, Electron, React, Remark and CodeMirro
 Built files will be located under the "dist" folder.
 
 ## What needs to be worked on
-[ ] File Saving
+* [ ] File Saving
 
-[ ] Custom syntax theme for code blocks 
+* [ ] Custom syntax theme for code blocks 
